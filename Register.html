@@ -7,6 +7,9 @@
     <title>Registeration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="bloodDonateReg.css">
+    <script src="bloodReg.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     
 
 </head>
@@ -14,36 +17,44 @@
         <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         
-        <div class = "bg"></div>
-        <div class = "center"></div>
-        <p class = "header_text">Blood Donation</p> 
-        <div class = "container_header">
-            
-            <pre class = "lorem">
-            Lorem ipsum, dolor sit amet consec 
-            adipisicing elit. Natus omnis hic o 
-            molestiae,autem in fugiat facere fac
-            recusandae, voluptates atque error.
-            Maiores minus dolores placeat q 
-            natus laudantium expedita? etdx
-            Lorem ipsum dolor sit hello wor
-            amet consectetur adipisicing 
-            elit. Consectetur, mollitia velit
-            beatae quidem libero facere qui, illo, 
-            doloremque veritatis ipsa culpa? 
-            Vel perspiciatis et quia saepe ea nisi 
-            debitis a! blood donation etx texdxx
-            </pre> 
+
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label class="logo">Friends Blood Donor Association</label>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Team</a></li>
+    </ul>
+</nav>
+    <div class = "bg">
+        <div class="content">
+            <p class = "header_text">Blood Donation</p> 
+            <img src="Register/logoimage.png" alt="FBDA">
         </div>
+    </div>
+        
         
          
-        <p class = "register">Registration Form</p><br><br><br>
-        <p class = "personal">Personal Details:</p>
-        <p class = "address">Address:</p>
+        
+            
+
+        <div class = "center">
+            <p class = "register">Registration Form</p><br><br><br>
+            <p class = "personal">Personal Details:</p>
+            <p class = "address">Address:</p>
+        
+            <div class = formparent>
             <form class = "form1">
-                <p>Full Name:</p><input class="inp" placeholder = "Name" type="text" name="fname" size="20"/>
+                <p>Full Name:</p><input id= "fname" class="inp" placeholder = "Name" type="text" name="fname" size="20"/>
+                <br><br>
                 <p>Mobile Number:</p>
-                <input class="inp" placeholder="mobile number" type="text" name="number" size="11"/>
+                <input class="inp" placeholder="mobile number" type="text" name="number" size="11"/><br>
+                <br>
                 <p>Email Id:</p><input class="inp" placeholder="email" type="email" size="25">
                 <p>D.O.B:</p><input id = "dob"  type="date"/><br><br>
                 <p>Gender:</p><input class = "radio"type="radio" name="gender">Male</input>
@@ -60,24 +71,23 @@
                                 <option value="AB+ve">AB+ve</option>
                                 <option value="AB-ve">AB-ve</option>
                               </select><br><br>
-                <p>Health issues:</p><font font-size="bold"><input class = "radio"type="radio">Yes</font></input>
-                              <input class = "radio"type="radio">No</input>
             </form>
+            </div>
 
             <form class = "form2">
-                <p>Town/City:</p><input placeholder="Town/City" type="text" id="address_input"/>
-                <p>Mandal:</p><input type="text"placeholder="Mandal" id="address_input"/>
-                <p>District:</p><input type="text" placeholder="District" id="address_input"/>
-                <p>State:</p><input type="text"placeholder="State" id="address_input"/>
-                <p>Country:</p><input type="text" placeholder="Country" id="address_input"/>
+                <p>Town/City:</p><input placeholder="Town/City" type="text" id="address_input"/><br><br>
+                <p>District:</p><input type="text" placeholder="District" id="address_input"/><br><br>
+                <p>State:</p><input type="text"placeholder="State" id="address_input"/><br><br>
+                <p>Country:</p><input type="text" placeholder="Country" id="address_input"/><br><br>
                 <p>Pin code:</p><input type="number"placeholder="Pin Code" id="address_input"/>
                 <br><br>
                 
                 <button type="button" id = "reset"class="btn btn-dark">Reset</button>
             </form>
-            <button type="button" id = "reg_btn" class="btn btn-success">Register</button>
+            <button type="button" id = "reg_btn" onclick="display()" class="btn btn-success">Register</button>
+        </div>
             
-            
+        </div>
         </div>
         </div>
     </body>
