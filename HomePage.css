@@ -1,0 +1,203 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+  }
+
+  /* CSS for header */
+  nav{
+    background: #d60000;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a.active,a:hover{
+    background: #ff6363;
+    color: white;
+    transition: .2s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+  /* CSS for main element */
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 630px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("Register/h1_edited.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+    .intro q {
+    font-size: 40px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .intro button {
+    background-color: #c9c9c9;
+    color: #000;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgba(32, 21, 21, 0.4)
+  }
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 2px solid #9f5050;
+  }
+  .description {
+    font-size: 20px;
+    background-color:#ffffff;
+    margin: 10px 0;
+  }
+
+  /* CSS for footer */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b71616;
+    padding: 100px 100px;
+  }
+
+  .footer .copy {
+    color: rgb(13, 8, 8);
+  }
+  .text{
+    font-size: 30px;
+    color: #fff;
+    justify-content: left;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 100px 20px;
+  }
+
+  .bottom-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    padding: 40px 0;
+  }
+
+  .bottom-links .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .bottom-links .links span {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  .bottom-links .links a {
+    text-decoration: none;
+    color: #0e0000;
+    padding: 15px 35px;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #600000;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition:all .6s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0073b1;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    label.logo{
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      line-height: 80px;
+      margin-left: 10px;
+      padding: 0 0 0 0;
+      margin-right: 0px;
+    }
+  }
