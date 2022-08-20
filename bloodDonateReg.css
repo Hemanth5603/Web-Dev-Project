@@ -1,45 +1,98 @@
 *{
-    margin: 0;
     padding: 0;
-}
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
 
 html{
     font-size: 62.5%
 }
+body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #d60000;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a.active,a:hover{
+    background: #ff6363;
+    color: white;
+    transition: .2s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
 
-
-@media(max-width:998px){
-
-    html{
-        font-size: 55%;
-    }
+.container_header{
+    position: relative;
+    position: absolute;
+    top: 35%;
+    color: #ededed;
+    justify-content:baseline;
+    font-size: 1.8rem;
+    font-style:bold;
+    right: 70%;
 }
-@media(max-width:768px){
-    html{
-        font-size: 45%;
-    }
-}
+
 
 .center{
-    margin-top: 10px;
+    margin-top: 15px;
     position: absolute;
-    top: 50%;
+    top: 62%;
     left: 70%;
     transform: translate(-50%,-50%);
     background-color: rgb(255, 229, 229);
-    width: 800px;
-    height: 600px;
+    width: 700px;
+    height: 650px;
     border-radius: 10px;
+    z-index: -1;
 }
 
+
 .bg{
-    height: 100%;
-    width: 100%;
-    background-image: url(Register/registerBg3.png);
-    background-position: center;
-    background-size: var(--bg-size);
-    background-size: cover;
     position: absolute;
+    width: 500px;
+    height:100%;
+    left: 0%;
+    background-color:#ff1414b7;
+    /*#ff1414b7*/
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: black;
 }
 
 
@@ -56,7 +109,7 @@ p{
     border-radius: 2rem;
     padding: 1rem;
     font-size: 1.2rem;
-        outline-color: rgb(252, 75, 131);
+    outline-color: rgb(252, 75, 131);
 
 }
 
@@ -76,6 +129,7 @@ p{
     border:0.2px solid #c0c0c0;
     border-radius: 2rem;
     padding: 1rem;
+
     font-size: 1.2rem;
     outline-color: rgb(252, 75, 131);
 
@@ -85,37 +139,40 @@ p{
 .personal{
     position: absolute;
     font-style: bold;
-    font-size: 2.8rem;
-    margin-top: 6rem;
-    left: 45%;
+    font-size: 2.5rem;
+    margin-top: 2.20rem;
+    left: 7%;
 }
 
 .address{
     position: absolute;
-    font-size: 2.8rem;
-    margin-top: 6rem;
-    left:75%;
+    font-size: 2.5rem;
+    margin-top: 2.20rem;
+    left:55%;
 }
+
+
+
 .form1{
     margin-top: 10rem;
     position: absolute;
-    top: 7%;
+    top: 3%;
     margin-right: 2rem;
-    left: 45%;
+    left: 7%;
 }
 .form2{
     position: absolute;
     margin-top: 10rem;
-    top: 7%;
-    left: 75%;
+    top: 3%;
+    left: 55%;
 
 }
 .register{  
     position: absolute;
-    font-size: 4rem;
-    margin-top: 3.5rem;
+    font-size: 3.5rem;
+    margin-top: 0.1rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    left: 55%;
+    left: 25%;
 }
 
 
@@ -131,9 +188,8 @@ p{
     position: absolute;
     top: 12%;
     color: #ffffff;
-    font-size: 3rem;
-    margin-top: 4rem;
     font-size: 5rem;
+    margin-top: 4rem;
     font-style:bold;
     left: 5%;
 }
@@ -143,35 +199,162 @@ p{
 
 #reset{
     border-radius: .5rem;
+     
     background-color: rgb(67, 67, 67);
     font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 0.4rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 2rem;
 }
 
 #reg_btn{
     position:absolute;
-    top: 85%;
-    right: 4%;
+    margin-top: 55rem;
+    margin-left: 4.5rem;
     background-color: rgb(255, 67, 142);
-    border-radius: 5rem;
-    font-size: 1.5rem;
+    border-radius: 1rem;
+    font-size: 2rem;
     border: 0rem;
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-top: 4.5rem;
-    position: absolute;
-    width:30rem ;
+    height: 3.5rem;
+    width:55rem ;
+    margin-bottom: 10rem;
 }
 
-.container_header{
-    position: relative;
-    position: absolute;
-    top: 35%;
-    color: #ededed;
-    justify-content:baseline;
-    font-size: 1.8rem;
-    font-style:bold;
-    right: 70%;
+@media(max-width:480px){
+
+    html{
+        font-size: 35%;
+    }
+    *{
+        margin: 0%;
+        padding: 0%;
+        margin-right: -10%;
+    }
+    .header_text{
+        display: none;
+    }
+    .lorem{
+        display: none;
+    }
+    .bg{
+        display: none;
+    }
+    .center{
+        width: 80%;
+        height: 900px;
+        min-width: 320px;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        top: 90%;
+
+    }
+    .register{
+        left: 20%;
+    }
+    .address{
+        top: 48%;
+        left:22%;
+        font-size: 3rem;
+    }
+    .form1{
+        left: 22%;
+    }
+    .form2{
+        top: 47%;
+        left: 22%;
+    }
+    .personal{
+        left: 22%;
+        font-size: 3rem;     
+    }
+    .inp{
+        width: 30rem;
+        height: 3rem;
+    }
+    #reg_btn{
+        position: relative;
+        top: 47%;
+        width: 35rem;
+    }
+    #address_input{
+        width:25rem;
+        height: 3rem;
+    }
+    .checkbtn{
+        margin-right: 2px;
+    }
+    
 }
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+      nav ul li a{
+        font-size: 16px;
+      }
+      .bg{
+        display: none;
+    }
+
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+    .header_text{
+        display: none;
+    }
+    .lorem{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+        margin-right: 100px;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #600000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:all .6s;
+        z-index: 1;
+      }
+      nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0073b1;
+      }
+      #check:checked ~ ul{
+        left: 0;
+        
+      }
+      label.logo{
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        line-height: 80px;
+        margin-left: 10px;
+        padding: 0 0 0 0;
+        margin-right: 0px;
+      }
+      
+
+}
+
+
