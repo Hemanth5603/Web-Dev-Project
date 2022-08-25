@@ -73,12 +73,12 @@ body{
 .center{
     margin-top: 15px;
     position: absolute;
-    top: 62%;
+    top: 70%;
     left: 70%;
     transform: translate(-50%,-50%);
-    background-color: rgb(255, 229, 229);
-    width: 700px;
-    height: 650px;
+    background-color: rgb(251, 193, 193);
+    width: 600px;
+    height: 830px;
     border-radius: 10px;
     z-index: -1;
 }
@@ -87,12 +87,30 @@ body{
 .bg{
     position: absolute;
     width: 500px;
-    height:100%;
+    height:125%;
     left: 0%;
     background-color:#ff1414b7;
     /*#ff1414b7*/
     border-radius: 0px 0px 0px 0px;
     box-shadow: black;
+}
+.bg-logo{
+    position: relative;
+    width: 400px;
+    margin: 90px 0px 0px 40px;
+    z-index: 0;
+
+}
+.header_text{
+    position: absolute;
+    top: 50%;
+    font-style: italic;
+    color: #ededed;
+    font-size: 3rem;
+    margin-top: 4rem;
+    font-style:bold;
+    left: 7%;
+    z-index: 3;
 }
 
 
@@ -100,7 +118,7 @@ p{
     font-size: 1.8rem;
 }
 
-
+/* 
 .inp{
     width: 22rem;
     height: 2.8rem;
@@ -135,6 +153,7 @@ p{
 
 
 }
+*/
 
 .personal{
     position: absolute;
@@ -152,7 +171,7 @@ p{
 }
 
 
-
+/*
 .form1{
     margin-top: 10rem;
     position: absolute;
@@ -166,7 +185,7 @@ p{
     top: 3%;
     left: 55%;
 
-}
+}*/
 .register{  
     position: absolute;
     font-size: 3.5rem;
@@ -174,6 +193,60 @@ p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     left: 25%;
 }
+
+.contain{
+    position: relative;
+    top: 1%;
+    left: 20%;
+    width: 500px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0);
+    padding-left: 12px;
+}
+
+label{
+    margin: 20px 0px 0px 20px ;
+    font-size: 20px;
+}
+
+
+input{
+    margin: 22px 0px 0px 20px;
+    width: 250px;
+    height: 40px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+
+}
+input[type="submit"]{
+    width: 300px;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+select{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin: 10px 0px 0px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea{
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px 0px 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/*
 
 
 .select_option{
@@ -184,15 +257,7 @@ p{
     border-radius: 0.8rem;
     padding: 0.5rem;
 }
-.header_text{
-    position: absolute;
-    top: 12%;
-    color: #ffffff;
-    font-size: 5rem;
-    margin-top: 4rem;
-    font-style:bold;
-    left: 5%;
-}
+
 .radio{
     width: 2.5rem;;
 }
@@ -355,6 +420,5 @@ p{
       }
       
 
-}
-
+} */
 
