@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+  }
+  /* CSS for header */
+  nav{
+    background: #d60000;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  a.active,a:hover{
+    background: #ff6363;
+    color: white;
+    transition: .2s;
+  }
+  .heading{
+ text-align: center;
+ font-size: x-large;
+}
+.sec-head{
+    font-size: xx-large;
+    margin-left: 3%;
+}
+.avareness{
+  width:1200px;
+  height: 20%;
+  display: flex;
+  margin-left: 5%;
+}
+.img1{
+  width:500px;
+  height:450px;
+  margin-left: 2%;
+  object-fit: cover;
+}
+.img2{
+  width:500px;
+  height:450px;
+  margin-left: 2%;
+  object-fit: cover;
+}
+.img3{
+  width:500px;
+  height:450px;
+  margin-left: 2%;
+  object-fit: cover;
+}
+.img4{
+  width:500px;
+  height:550px;
+  margin-left: 3%;
+  object-fit: cover;
+}
+.img5{
+  width:500px;
+  height:550px;
+  margin-left: 3%;
+  object-fit: cover;
+}
+.img6{
+  width:500px;
+  height:550px;
+  margin-left: 3%;
+  object-fit: cover;
+}
+.description{
+  align-content: center;
+  margin-left: 2%;
+  font-size: x-large;
+}
