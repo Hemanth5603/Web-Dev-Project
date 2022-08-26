@@ -106,7 +106,7 @@ body {
     height: 20%;
     display: flex;
     margin-top: 3%;
-    margin-left: 3%;
+    margin-left: 0%;
   }
   .img1{
     width:500px;
@@ -139,8 +139,8 @@ body {
 
   /* CSS for footer */
   .logos{
-  width: 40px;
-    }
+    width: 40px;
+  }
   .footer {
     display: flex;
     justify-content: space-between;
