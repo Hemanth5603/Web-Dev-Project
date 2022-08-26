@@ -285,7 +285,7 @@ textarea{
     height: 3.5rem;
     width:55rem ;
     margin-bottom: 10rem;
-}
+}*/
 
 @media(max-width:480px){
 
@@ -350,6 +350,13 @@ textarea{
     }
     .checkbtn{
         margin-right: 2px;
+    }
+
+    .content{
+        display: none;
+    }
+    .bg-logo{
+        display: none;
     }
     
 }
@@ -420,5 +427,5 @@ textarea{
       }
       
 
-} */
+} 
 
