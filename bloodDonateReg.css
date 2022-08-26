@@ -358,6 +358,13 @@ textarea{
     .bg-logo{
         display: none;
     }
+    label{
+        margin: 20px 0px 0px 8px ;
+    }
+    input{
+        width: 180px;
+        margin: 22px 0px 0px 7px;
+    }
     
 }
 @media(max-width:998px){
