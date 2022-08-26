@@ -111,19 +111,19 @@ body {
   .img1{
     width:500px;
     height:450px;
-    margin-left: 0%;
+    margin-left: 1%;
     object-fit: cover;
   }
   .img2{
     width:500px;
     height:450px;
-    margin-left: 0%;
+    margin-left: 1%;
     object-fit: cover;
   }
   .img3{
     width:500px;
     height:450px;
-    margin-left: 0%;
+    margin-left: 1%;
     object-fit: cover;
   }
   .description p {
